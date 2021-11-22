@@ -1,0 +1,27 @@
+<!-- 1 text 相当于以前web中的 span标签 行内元素 不会换行
+  2 view 相当于以前web中的 div标签 块级元素 会换行
+  3 checkbox 以前的复选框标签 -->
+<!-- <text>1</text>
+<text>2</text>
+<view>1</view>
+<view>2</view> -->
+<!-- 1 字符串 -->
+<view>{{msg}}</view>
+<!-- 2 数字类型 -->
+<view>{{num}}</view>
+<!-- 3 bool类型 -->
+<view>是否是伪娘：{{isGirl}}</view>
+<!-- 4 object类型 -->
+<view>{{person.age}}</view>
+<view>{{person.height}}</view>
+<view>{{person.weight}}</view>
+<view>{{person.name}}</view>
+<!-- 5 在标签的属性中使用 -->
+<view data-num="{{num}}">自定义属性</view>
+<!-- 6 使用bool类型充当属性 checked
+      1 字符串和 花括号之间一定不要存在空格 否则会导致识别失败
+        以下写法就是错误的示范
+          <checkbox checked="   {{isChecked}}"></checkbox> -->
+<view>
+  <checkbox checked="{{isChecked}}"></checkbox>
+</view>
