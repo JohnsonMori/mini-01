@@ -84,3 +84,32 @@
     值：{{item.name}}
   </block>
 </view>
+<!-- 11 条件渲染
+    1 wx:if="{{true/false}}"
+      1 if , else , if else
+        wx:if
+        wx:elif
+        wx:else
+    2 hidden
+      1 在标签上直接加入属性 hidden
+      2 hidden="{{true}}"
+    3 什么场景下用哪个
+      1 当标签不是频繁的切换显示 优先使用 wx:if
+        直接把标签从 页面结构给移除掉
+      2 当标签频繁的切换显示的时候 优先使用 hidden
+        通过添加样式的方式来切换显示
+        hidden 属性 不要和 样式 display一起使用 -->
+<view>
+  <view>条件渲染</view>
+  <view wx:if="{{true}}">显示</view>
+  <view wx:if="{{false}}">隐藏</view>
+  <view wx:if="{{false}}">1</view>
+  <view wx:elif="{{false}}">2</view>
+  <view wx:else>3</view>
+  <view>-------------------------</view>
+  <view hidden="{{true}}">hidden1</view>
+  <view hidden="{{false}}">hidden2</view>
+  <view>-----------000-----------</view>
+  <view wx:if="{{false}}">wx:if</view>
+  <view hidden style="display:flex;">hidden</view>
+</view>
