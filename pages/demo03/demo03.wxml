@@ -73,3 +73,14 @@
     值：{{value}}
   </view>
 </view>
+<!-- 10 block
+    1 占位符的标签
+    2 写代码的时候 可以看到这标签存在
+    3 页面渲染 小程序会把它移除掉 -->
+<view>
+  <block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id" class="my_list">
+    索引：{{index}}
+    --
+    值：{{item.name}}
+  </block>
+</view>
