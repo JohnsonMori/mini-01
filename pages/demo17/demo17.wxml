@@ -1,1 +1,1 @@
-<Tabs></Tabs>
+<Tabs tabs="{{tabs}}"></Tabs>
