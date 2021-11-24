@@ -1,1 +1,1 @@
-<Tabs tabs="{{tabs}}"></Tabs>
+<Tabs tabs="{{tabs}}" bind:itemchange="handleItemChange"></Tabs>
