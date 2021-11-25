@@ -3,7 +3,7 @@ App({
   // 1 应用第一次启动的时候就会触发的事件
   onLaunch() {
     // 在应用第一次启动的时候 获取用户的个人信息
-    console.log("onLaunch");
+    // console.log("onLaunch");
     // aabbcc
 
     // js的方式来跳转 不能触发 onPageNotFound
@@ -16,7 +16,7 @@ App({
   // 2 应用 被用户看到
   onShow() {
     // 对应用的数据或者页面效果 重置
-    console.log("onShow");
+    // console.log("onShow");
   },
 
   // 3 应用 被隐藏了
