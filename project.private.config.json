@@ -1,0 +1,23 @@
+{
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "不存在对页面",
+                    "pathName": "pages/de333mo17/de3333mo17",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}
